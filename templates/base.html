@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Интернет-магазин</title>
+</head>
+<body>
+<nav>
+    <a href="templates\clothes.html">Одежда</a><br>
+    <a href="templates\shoes.html">Обувь</a><br>
+    <a href="templates\jacket.html">Куртки</a>
+</nav>
+
+<header>
+    {% block content %} {% endblock %}
+    <p> стоимость: {% block cost %} {% endblock %}</p>
+</header>
+
+<footer>
+    <p>Контакты: тел +79651234556, ул.Архипова,д.1,стр.2</p>
+</footer>
+
+</body>
+</html>
